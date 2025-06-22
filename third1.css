@@ -1,0 +1,353 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(#0f172a, #000000);
+  color: #e0e0e0;
+}
+
+/* Header */
+header {
+  padding: 2rem;
+  background-color: #121827;
+  color: #00bfff;
+  text-align: center;
+  text-shadow: 0 0 10px #00bfff;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+  border-bottom: 2px solid #00bfff;
+}
+
+/* Main content area */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+/* Player card */
+.hi {
+  background-color: rgba(20, 24, 38, 0.9);
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.08);
+  border: 1px solid #e3e9eb33;
+  position: relative;
+}
+
+.hi:hover {
+  background-color: rgba(30, 40, 60, 0.95);
+  box-shadow: 0 0 35px rgba(0, 191, 255, 0.3);
+  transform: scale(1.03);
+}
+/* Inner glow effect */
+.hi::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #00bfff33, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.hi:hover::before {
+  opacity: 1;
+}
+
+/* Player image */
+.hi img {
+  margin-top: 25px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+  border: 2px solid #00bfff44;
+  transition: transform 0.3s ease;
+}
+
+.hi:hover img {
+  transform: scale(1.05);
+}
+
+/* General image reset (if needed elsewhere) */
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Optional title inside .hi card */
+.hi h3 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #00bfff;
+  text-shadow: 0 0 6px #00bfff55;
+}
+
+/* تجميع كل الأزرار */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 30px;
+}
+
+/* الزر الأساسي */
+.button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+/* شكل الزر عند الهوفر */
+.button:hover {
+  background-color: rgba(30, 40, 60, 0.95);
+  box-shadow: 0 0 35px rgba(0, 191, 255, 0.3);
+}
+
+/* الرابط داخل الزر */
+.button a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: #aaa;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+/* الزر الحالي (active) */
+.button a.active {
+  background-color: #00bfff;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
+  font-weight: 500;
+}
+
+/* النقاط (...) */
+.dot {
+  font-size: 30px;
+  margin-top: 0px;
+  color: #888;
+}
+
+/* Disclosure */
+.disclosure {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border: 1px solid #00bfff;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #00bfff;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+footer a {
+  margin: 0 10px;
+  color: #00bfff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;}
+
+
+
+
+#searchInput {
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+  margin: auto ;
+  display: block;
+  padding: 0 15px;
+  border-radius: 12px;
+  background-color: rgba(20, 24, 38, 0.9);
+  border: 1px solid #00bfff33;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);
+  margin-top: 35px;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #00bfff;
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
+  background-color: rgba(30, 35, 50, 0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Large Screens (1600px and up) */
+@media (min-width: 1600px) {
+  main,
+  #searchResults {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 60px; /* more side space */
+    gap: 30px;
+  }
+
+  .hi {
+    width: 350px;
+    height: 400px;
+  }
+
+  #searchInput {
+    width: 300px;
+  }
+}
+
+/* Medium to Large Laptops (1200px–1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  main,
+  #searchResults {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    gap: 25px;
+  }
+
+  .hi {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+/* Tablets & Small Laptops (768px–1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  main,
+  #searchResults {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    gap: 20px;
+  }
+
+  .hi {
+    width: 250px;
+    height: 330px;
+  }
+
+  #searchInput {
+    width: 80%;
+  }
+}
+
+/* Phones (481px–767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  main,
+  #searchResults {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 50px;
+  }
+
+  .hi {
+    width: 90%;
+    height: auto;
+  }
+
+  #searchInput {
+    width: 90%;
+    height: 45px;
+  }
+}
+
+/* Extra Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  main,
+  #searchResults {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 8px;
+    gap: 16px;
+  }
+
+  .hi {
+    width: 95%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .hi img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hi h3 {
+    font-size: 1.1rem;
+  }
+
+  #searchInput {
+    width: 90%;
+    height: 40px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+}
+
+

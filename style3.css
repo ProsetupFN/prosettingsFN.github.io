@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e10;
+  color: #ffffff;
+ 
+}
+
+header {
+  padding: 2rem;
+  background-color: #1f1f23;
+}
+main {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+}
+.hi{
+background-color: #1f1f23;
+width: 250px;
+height: 350px;
+text-align: center;
+border-radius: 30px;
+transition: 1s;
+text-decoration: none;
+
+}
+.hi img{
+    height: 190px;
+    border-radius: 50%;
+    
+}
+.hi:hover{
+width: 260px;
+height:360px ;
+}
+
+
+
+.hi{
+    background-color: #1f1f23;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.4s;
+text-decoration: none;
+color: inherit;
+
+}
+.hi img{
+    height: 190px;
+    border-radius: 50%;
+}
+.hi:hover, .LO:hover {
+width: 350px;
+height: 360px;
+background-color: #2a2a30;
+box-shadow: 20px 10px 25px rgba(0, 0, 0, 0.5);
+
+}
+img{
+  padding-top: 10px;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hi h1 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+

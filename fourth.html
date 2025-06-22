@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="dynamic-title">Fortnite Pro Settings – Player Name</title>
+<meta id="dynamic-description" name="description" content="View Fortnite settings of Player Name – sensitivity, DPI, resolution, and gear. Used by top pros in tournaments.">
+<meta name="keywords" content="Player Name Fortnite settings, Player Name sensitivity, Fortnite DPI, Fortnite mouse settings, Fortnite controller settings, pro Fortnite settings 2025">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Dark Mode Toggle Button -->
+  <button class="theme-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
+
+
+
+  <script>
+    // Function to get URL parameters
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const playerName = getQueryParam("player") || "Unknown Player";
+
+    document.getElementById("dynamic-title").innerText = `Fortnite Pro Settings – ${playerName}`;
+    document.getElementById("dynamic-description").setAttribute(
+      "content",
+      `View Fortnite settings of ${playerName} – sensitivity, DPI, resolution, and gear. Used by top pros in tournaments.`
+    );
+  </script>
+
+
+
+
+
+
+  
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">FortnitePro</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="third1.html">Players</a></li>
+        <li><a href="index.html#gear">Gear</a></li>
+        <li><a href="index.html#disclosure">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Profile Box -->
+    <div class="profile-box">
+      <div class="profile-img">
+        <img id="player-img" src="DoughFruit.webp" alt="Player Profile Picture" />
+      </div>
+      <div class="profile-info">
+        <h1 id="player-name"></h1>
+        <p id="region"></p>
+        <p id="team"></p>
+      </div>
+    </div>
+
+    <!-- Game Settings -->
+    <div class="settings-box">
+      <h2>Game Settings</h2>
+      <div class="setting-row"><span>Resolution</span><span id="resolution"></span></div>
+      <div class="setting-row"><span>Display Mode</span><span id="displayMode"></span></div>
+      <div class="setting-row"><span>Frame Rate Limit</span><span id="frameRateLimit"></span></div>
+      <div class="setting-row"><span>Brightness</span><span id="brightness"></span></div>
+      <div class="setting-row"><span>User Interface Contrast</span><span id="uiContrast"></span></div>
+      <div class="setting-row"><span>Color Blind Mode</span><span id="colorBlindMode"></span></div>
+      <div class="setting-row"><span>3D Resolution</span><span id="resolution3D"></span></div>
+      <div class="setting-row"><span>View Distance</span><span id="viewDistance"></span></div>
+      <div class="setting-row"><span>Shadows</span><span id="shadows"></span></div>
+      <div class="setting-row"><span>Anti-Aliasing</span><span id="antiAliasing"></span></div>
+      <div class="setting-row"><span>Textures</span><span id="textures"></span></div>
+      <div class="setting-row"><span>Effects</span><span id="effects"></span></div>
+      <div class="setting-row"><span>Post Processing</span><span id="postProcessing"></span></div>
+      <div class="setting-row"><span>Vsync</span><span id="vsync"></span></div>
+      <div class="setting-row"><span>Motion Blur</span><span id="motionBlur"></span></div>
+      <div class="setting-row"><span>Rendering Mode</span><span id="renderingMode"></span></div>
+      <div class="setting-row"><span>HUD Scale</span><span id="hudScale"></span></div>
+    </div>
+
+    <!-- Mouse and Sensitivity Settings -->
+    <div class="settings-box">
+      <h2>Mouse & Sensitivity</h2>
+      <div class="setting-row"><span>DPI</span><span id="dpi"></span></div>
+      <div class="setting-row"><span>Polling Rate</span><span id="pollingRate"></span></div>
+      <div class="setting-row"><span>X-Axis Sensitivity</span><span id="xAxisSensitivity"></span></div>
+      <div class="setting-row"><span>Y-Axis Sensitivity</span><span id="yAxisSensitivity"></span></div>
+      <div class="setting-row"><span>Targeting Sensitivity</span><span id="targetingSensitivity"></span></div>
+      <div class="setting-row"><span>Scope Sensitivity</span><span id="scopeSensitivity"></span></div>
+      <div class="setting-row"><span>Mouse Acceleration</span><span id="mouseAcceleration"></span></div>
+      
+    </div>
+
+    <!-- Keybinds -->
+    <div class="settings-box">
+      <h2>Keybinds</h2>
+      <div class="setting-row"><span>Wall</span><span id="keyWall"></span></div>
+      <div class="setting-row"><span>Floor</span><span id="keyFloor"></span></div>
+      <div class="setting-row"><span>Stairs</span><span id="keyStairs"></span></div>
+      <div class="setting-row"><span>Roof</span><span id="keyRoof"></span></div>
+      <div class="setting-row"><span>Trap</span><span id="keyTrap"></span></div>
+      <div class="setting-row"><span>Use</span><span id="keyUse"></span></div>
+      <div class="setting-row"><span>Crouch</span><span id="keyCrouch"></span></div>
+      <div class="setting-row"><span>Inventory</span><span id="keyInventory"></span></div>
+      <div class="setting-row"><span>Map</span><span id="keyMap"></span></div>
+      <div class="setting-row"><span>Reload / Rotate</span><span id="keyReloadRotate"></span></div>
+      <div class="setting-row"><span>Building Edit</span><span id="keyEdit"></span></div>
+      <div class="setting-row"><span>Confirm Edit on Release</span><span id="keyConfirmEditRelease"></span></div>
+    </div>
+
+    <!-- Gear -->
+    <div class="gear-box">
+      <h2>Gear</h2>
+      <div class="setting-row"><span>Mouse</span><span>Logitech G Pro</span></div>
+      <div class="setting-row"><span>Keyboard</span><span>SteelSeries Apex Pro</span></div>
+      <div class="setting-row"><span>Monitor</span><span>Alienware 240Hz</span></div>
+      <div class="setting-row"><span>Headset</span><span>HyperX Cloud II</span></div>
+      <div class="setting-row"><span>Mousepad</span><span>Artisan Zero</span></div>
+      <div class="setting-row"><span>GPU</span><span>NVIDIA RTX 3080</span></div>
+      <div class="setting-row"><span>CPU</span><span>Intel i9-12900K</span></div>
+    </div>
+
+
+
+
+  <!-- JavaScript for Theme Toggle -->
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+
+  function getQueryParams() {
+    const params = {};
+    const queryString = window.location.search.substring(1);
+    const pairs = queryString.split("&");
+    for (const pair of pairs) {
+      const [key, value] = pair.split("=");
+      params[decodeURIComponent(key)] = decodeURIComponent(value || "");
+    }
+    return params;
+  }
+
+  function fillSettings(data) {
+    const setText = (id, value) => {
+      const el = document.getElementById(id);
+      if (el && value !== undefined && value !== "") el.textContent = value;
+      else if (el) el.textContent = "";
+    };
+
+    // صورة اللاعب
+    const playerImg = document.getElementById("player-img");
+    if (playerImg) {
+      playerImg.src = decodeURIComponent(data.image || "DoughFruit.webp");
+    }
+
+    // بيانات اللاعب
+    setText("player-name", data.player);
+    setText("region", data.region ? `Region: ${data.region}` : "");
+    setText("team", data.team ? `Team: ${data.team}` : "");
+
+    // إعدادات اللعبة
+    setText("resolution", data.resolution);
+    setText("displayMode", data.displayMode);
+    setText("frameRateLimit", data.frameRateLimit);
+    setText("brightness", data.brightness);
+    setText("uiContrast", data.uiContrast);
+    setText("colorBlindMode", data.colorBlindMode);
+    setText("resolution3D", data.resolution3D);
+    setText("viewDistance", data.viewDistance);
+    setText("shadows", data.shadows);
+    setText("antiAliasing", data.antiAliasing);
+    setText("textures", data.textures);
+    setText("effects", data.effects);
+    setText("postProcessing", data.postProcessing);
+    setText("vsync", data.vsync);
+    setText("motionBlur", data.motionBlur);
+    setText("renderingMode", data.renderingMode);
+    setText("hudScale", data.hudScale);
+
+    // الحساسية
+    setText("dpi", data.dpi);
+    setText("pollingRate", data.pollingRate);
+    setText("xSensitivity", data.xSensitivity);
+    setText("ySensitivity", data.ySensitivity);
+    setText("targetingSensitivity", data.targetingSensitivity);
+    setText("scopeSensitivity", data.scopeSensitivity);
+    setText("mouseAcceleration", data.mouseAcceleration);
+
+    // روابط الشراء
+    const setLink = (id, url) => {
+      const link = document.getElementById(id);
+      if (link && url) {
+        link.href = url;
+        link.target = "_blank";
+      } else if (link) {
+        link.href = "#";
+      }
+    };
+
+    setLink("mouseBuyLink", data.buyMouse);
+    setLink("keyboardBuyLink", data.buyKeyboard);
+    setLink("monitorBuyLink", data.buyMonitor);
+    setLink("headsetBuyLink", data.buyHeadset);
+
+    // Keybinds
+    setText("keyWall", data.keyWall);
+    setText("keyFloor", data.keyFloor);
+    setText("keyStairs", data.keyStairs);
+    setText("keyRoof", data.keyRoof);
+    setText("keyTrap", data.keyTrap);
+    setText("keyUse", data.keyUse);
+    setText("keyCrouch", data.keyCrouch);
+    setText("keyInventory", data.keyInventory);
+    setText("keyMap", data.keyMap);
+    setText("keyReloadRotate", data.keyReloadRotate);
+    setText("keyEdit", data.keyEdit);
+    setText("keyConfirmEditRelease", data.keyConfirmEditRelease);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = getQueryParams();
+    fillSettings(params);
+
+    const playerImages = document.querySelectorAll(".player-img");
+    playerImages.forEach(img => {
+      img.addEventListener("click", () => {
+        const dataStr = img.getAttribute("data-player");
+        if (!dataStr) return;
+        let data;
+        try {
+          data = JSON.parse(dataStr);
+        } catch (e) {
+          console.error("Error parsing player data:", e);
+          return;
+        }
+        fillSettings(data);
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

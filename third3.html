@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="dynamic-title">Fortnite Pro Settings – Player Name</title>
+<meta id="dynamic-description" name="description" content="View Fortnite settings of Player Name – sensitivity, DPI, resolution, and gear. Used by top pros in tournaments.">
+<meta name="keywords" content="Player Name Fortnite settings, Player Name sensitivity, Fortnite DPI, Fortnite mouse settings, Fortnite controller settings, pro Fortnite settings 2025">
+
+  <link rel="stylesheet" href="third1.css" />
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <h1>Fortnite Pro Player Settings</h1>
+    <p>Get the latest settings from top Fortnite players</p>
+
+
+
+
+
+
+<input type="text" id="searchInput" placeholder="Search player..." />
+<div id="searchResults"></div>
+
+<script>
+  const files = ['third1.html', 'third2.html', 'third3.html', 'third4.html'];
+
+  async function loadPlayers() {
+    const containers = await Promise.all(files.map(file =>
+      fetch(file)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          return Array.from(doc.querySelectorAll('.hi'));
+        })
+    ));
+
+    return containers.flat(); // All player <div class="hi"> elements
+  }
+
+  loadPlayers().then(players => {
+    document.getElementById("searchInput").addEventListener("input", function () {
+      const searchTerm = this.value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = ""; // Clear previous results
+
+      if (searchTerm.length === 0) return;
+
+      players.forEach(player => {
+        const nameLi = player.querySelector("li");
+        if (nameLi && nameLi.textContent.toLowerCase().includes(searchTerm)) {
+          const clone = player.cloneNode(true); // Don't modify original
+          resultsContainer.appendChild(clone);
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+  </header>
+  <br />
+  <main>
+    
+ <!--shroud -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=shroud&region=NA&team=&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240%20FPS&brightness=50%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=0&resolution3D=Unknown&viewDistance=Epic&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=100%25&dpi=800&pollingRate=1000Hz&xSensitivity=0.065&ySensitivity=0.065&targetingSensitivity=65.3&scopeSensitivity=56.3&mouseAcceleration=Off&mouse=Logitech%20G%20Pro%20X%20Superlight%202%20Dex%20Black&keyboard=Logitech%20G%20Pro%20X%20TKL%20RAPID%20Black&monitor=ASUS%20ROG%20PG27AQDM&headset=Logitech%20G%20PRO%20X%202%20Headset%20Black&mousepad=Logitech%20G840%20Darth%20Vader&gpu=NVIDIA%20GeForce%20RTX%205090&cpu=AMD%20Ryzen%207%209800X3D&keyWall=Q&keyFloor=X&keyStairs=E&keyRoof=Mouse4&keyTrap=T&keyUse=F&keyCrouch=LeftCtrl&keySprint=LeftShift&keyJump=Space%20%2F%20MouseWheelDown&keyInventory=Unknown&keyMap=Unknown&keyReloadRotate=R&keyEdit=G&keyConfirmEditRelease=Unknown&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=5&keyWeaponSlot5=6&keyRotateBuilding=R&keyTurboBuilding=On&disablePreEditOption=Unknown&showFPS=On&nvidiaReflex=On%20%2BBoost&image=Shroud.jpg">
+        <img src="Shroud.jpg" />
+      </a>
+      <ul>
+        <li>shroud</li>
+       </ul>
+    </div>
+    <!--Pxlarized -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Pxlarized&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=360fps&brightness=150%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=0&viewDistance=Near&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Off&motionBlur=Unknown&renderingMode=Performance&hudScale=100%25&dpi=800&pollingRate=4000Hz&xSensitivity=4.6&ySensitivity=4.6&targetingSensitivity=30.0&scopeSensitivity=30.0&mouseAcceleration=Unknown&mouse=Logitech%20G%20Pro%20X%20Superlight%202%20Black&keyboard=SteelSeries%20Apex%20Pro%20Mini%20Black&monitor=Acer%20Nitro%20XV252QF&headset=Unknown&mousepad=Unknown&gpu=Unknown&cpu=Unknown&keyCrouch=L-Ctrl&keyJump=Space%20Bar%20%2F%20Mouse%20Wheel%20Up&keySprint=L-Alt&keyHarvestingTool=Q&keyWeaponSlot1=1&keyWeaponSlot2=C&keyWeaponSlot3=X&keyWeaponSlot4=2&keyWeaponSlot5=3&keyUse=E&keyWall=Mouse%205&keyFloor=L-Shift&keyStairs=Mouse%204&keyRoof=V&keyTrap=4&keyRotateBuilding=R&keyReloadRotate=R&keyMap=Unknown&keyInventory=Unknown&keyEdit=F%20%2F%20Mouse%20Wheel%20Down&keyTurboBuilding=On&keyConfirmEditRelease=On&disablePreEditOption=Off&resolution3D=100%25&showFPS=On&nvidiaReflex=Off&image=Pxlarized.jpg">
+        <img src="Pxlarized.jpg" />
+      </a>
+      <ul>
+        <li>Pxlarized</li>
+       </ul>
+    </div>
+    <!--Noahreyli -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Noahreyli&region=Unknown&team=Unknown&resolution=1720x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=132%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=5&viewDistance=Medium&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=75%25&dpi=800&pollingRate=2000Hz&xSensitivity=7.2&ySensitivity=7.2&targetingSensitivity=50.0&scopeSensitivity=50.0&mouseAcceleration=Unknown&mouse=Logitech%20G%20Pro%20X%20Superlight%202%20Black&keyboard=SteelSeries%20Apex%20Pro%20Mini%20Black&monitor=ZOWIE%20XL2566K&headset=Logitech%20G%20Pro%20X%20Headset&mousepad=Inked%20Gaming%20Custom%20Mousepad&gpu=NVIDIA%20GeForce%20RTX%203090&cpu=Intel%20Core%20i9-11900K&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=B&keyHarvestingTool=V&keyWeaponSlot1=Q&keyWeaponSlot2=E&keyWeaponSlot3=4&keyWeaponSlot4=5&keyWeaponSlot5=G&keyUse=Mouse%20Wheel%20Down&keyWall=Mouse%20Button%205&keyFloor=C&keyStairs=Mouse%20Button%204&keyRoof=L-Shift&keyTrap=T&keyRotateBuilding=R&keyReloadRotate=R&keyMap=Unknown&keyInventory=Unknown&keyEdit=F%20%2F%20Mouse%20Wheel%20Up&keyTurboBuilding=On&keyConfirmEditRelease=On&disablePreEditOption=Off&resolution3D=Unknown&showFPS=On&nvidiaReflex=Unknown&image=Noahreyli.jpg">
+        <img src="Noahreyli.jpg" />
+      </a>
+      <ul>
+        <li>Noahreyli</li>
+       </ul>
+    </div>
+    <!--Jacop -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Jacop&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=360fps&brightness=150%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=Unknown&viewDistance=Far&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=70%25&dpi=800&pollingRate=1000Hz&xSensitivity=8.7&ySensitivity=8.7&targetingSensitivity=52.5&scopeSensitivity=52.5&mouseAcceleration=Unknown&mouse=SteelSeries%20Aerox%205%20Wireless&keyboard=SteelSeries%20Apex%20Pro%20TKL%20Wireless%20%282023%29&monitor=ASUS%20ROG%20SWIFT%20PG259QN&headset=SteelSeries%20Arctis%20Nova%20Pro%20Wireless&mousepad=SteelSeries%20QcK%2B&gpu=NVIDIA%20GeForce%20RTX%204090&cpu=Intel%20Core%20i9-11900K&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=Unknown&keyHarvestingTool=1&keyWeaponSlot1=V&keyWeaponSlot2=B&keyWeaponSlot3=N&keyWeaponSlot4=4&keyWeaponSlot5=5&keyUse=E&keyWall=Mouse%20Button%205&keyFloor=Q&keyStairs=Mouse%20Button%204&keyRoof=T&keyTrap=C&keyRotateBuilding=R&keyReloadRotate=R&keyMap=Unknown&keyInventory=Unknown&keyEdit=G&keyTurboBuilding=Unknown&keyConfirmEditRelease=On&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=Off&nvidiaReflex=Unknown&image=Jacob.jpg">
+        <img src="Jacob.jpg" />
+      </a>
+      <ul>
+        <li>Jacop</li>
+       </ul>
+    </div>
+    <!--Sceptic -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Sceptic&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=75%25&uiContrast=1x&colorBlindMode=Deuteranope&colorBlindStrength=7&viewDistance=Epic&shadows=Off&antiAliasing=Off&textures=Epic&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=75%25&dpi=800&pollingRate=1000Hz&xSensitivity=8.5&ySensitivity=8.5&targetingSensitivity=50.0&scopeSensitivity=50.0&mouseAcceleration=Unknown&mouse=Finalmouse%20Ultralight%202&keyboard=Razer%20Huntsman%20Mini&monitor=Alienware%20AW2518H&headset=HyperX%20Cloud%20Flight&mousepad=ESPTIGER%20LongTeng&gpu=NVIDIA%20GeForce%20RTX%202080%20Ti&cpu=Intel%20Core%20i9-9900K&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=Unknown&keyHarvestingTool=Z&keyWeaponSlot1=1&keyWeaponSlot2=2&keyWeaponSlot3=3&keyWeaponSlot4=4&keyWeaponSlot5=5&keyUse=F&keyWall=Mouse%205&keyFloor=L-Shift&keyStairs=C&keyRoof=V&keyTrap=Q&keyRotateBuilding=R&keyReloadRotate=R&keyMap=Unknown&keyInventory=Unknown&keyEdit=E&keyTurboBuilding=On&keyConfirmEditRelease=Unknown&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=On&nvidiaReflex=On%20%2BBoost&image=Sceptic.jpg">
+        <img src="Sceptic.jpg" />
+      </a>
+      <ul>
+        <li>Sceptic</li>
+       </ul>
+    </div>
+    <!--Fresh -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Fresh&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=360fps&brightness=150%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=0&viewDistance=Epic&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=85%25&dpi=800&pollingRate=500Hz&xSensitivity=6.0&ySensitivity=6.0&targetingSensitivity=75.0&scopeSensitivity=75.0&mouseAcceleration=Unknown&mouse=FinalMouse%20Air58%20Ninja%20CBR&keyboard=SteelSeries%20Apex%20Pro%20Mini%20Black&monitor=Alienware%20AW2521H&headset=beyerdynamic%20DT%201990%20PRO&mousepad=Glorious%203XL&gpu=NVIDIA%20GeForce%20RTX%203080&cpu=Intel%20Core%20i9-10900K&keyCrouch=C&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=5&keyWeaponSlot5=X&keyUse=E&keyWall=Mouse%20Button%205&keyFloor=Q&keyStairs=Mouse%20Button%204&keyRoof=V&keyTrap=T&keyRotateBuilding=R&keyReloadRotate=R&keyMap=Unknown&keyInventory=Unknown&keyEdit=L-Shift&keyTurboBuilding=On&keyConfirmEditRelease=Off&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Fresh.jpg">
+        <img src="Fresh.jpg" />
+      </a>
+      <ul>
+        <li>Fresh</li>
+       </ul>
+    </div>
+    <!--Nikof -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Nikof&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=200fps&brightness=100%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=0&viewDistance=Near&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=100%25&dpi=800&pollingRate=1000Hz&xSensitivity=4.5&ySensitivity=4.5&targetingSensitivity=100.0&scopeSensitivity=100.0&mouseAcceleration=Unknown&mouse=Logitech%20G%20Pro%20X%20Superlight%20Black&keyboard=SteelSeries%20Apex%20Pro%20TKL%20%282023%29&monitor=Acer%20Predator%20XB241H&headset=beyerdynamic%20DT%20770%20Pro&mousepad=Corsair%20MM500&gpu=NVIDIA%20GeForce%20RTX%203080%20Ti&cpu=Intel%20Core%20i9-12900K&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=5&keyWeaponSlot5=6&keyUse=F&keyWall=V&keyFloor=Mouse%20Button%205&keyStairs=C&keyRoof=A&keyTrap=F&keyRotateBuilding=R&keyReloadRotate=R&keyMap=Unknown&keyInventory=Unknown&keyEdit=E&keyTurboBuilding=Unknown&keyConfirmEditRelease=Off&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Nikof.jpg">
+        <img src="Nikof.jpg" />
+      </a>
+      <ul>
+        <li>Nikof</li>
+       </ul>
+    </div>
+   <!--Andilex -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Andilex&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=100%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=0&viewDistance=Medium&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=100%25&dpi=700&pollingRate=1000Hz&xSensitivity=9.0&ySensitivity=9.0&targetingSensitivity=60.0&scopeSensitivity=100.0&mouseAcceleration=Unknown&mouse=Razer%20Viper%20Mini%20Signature%20Edition&keyboard=Wooting%2080HE%20Black&monitor=Alienware%20AW2518H&headset=Razer%20BlackShark%20V2%20Pro%20Black&mousepad=Razer%20Gigantus%20V2&gpu=NVIDIA%20GeForce%20RTX%202080%20Ti&cpu=AMD%20Ryzen%209%205900X&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=%C3%A9&keyWeaponSlot1=T&keyWeaponSlot2=V&keyWeaponSlot3=%60&keyWeaponSlot4=%26&keyWeaponSlot5=%E2%80%9C&keyUse=E&keyWall=Mouse%20Button%204&keyFloor=C&keyStairs=A&keyRoof=Mouse%20Button%205&keyTrap=X&keyRotateBuilding=R&keyReloadRotate=R&keyMap=Unknown&keyInventory=Unknown&keyEdit=G&keyTurboBuilding=Unknown&keyConfirmEditRelease=On&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Andilex.jpg">
+        <img src="Andilex.jpg" />
+      </a>
+      <ul>
+        <li>Andilex</li>
+       </ul>
+    </div>
+<!--Worthy -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Worthy&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=150%25&uiContrast=1x&colorBlindMode=Protanope&colorBlindStrength=8&viewDistance=Medium&shadows=Off&antiAliasing=Unknown&textures=Low&effects=Unknown&postProcessing=Unknown&vsync=Off&motionBlur=Off&renderingMode=Performance&hudScale=77%25&dpi=800&pollingRate=500Hz&xSensitivity=6.4&ySensitivity=6.4&targetingSensitivity=52.4&scopeSensitivity=52.4&mouseAcceleration=Unknown&mouse=ZOWIE%20U2&keyboard=Glorious%20GMMK%202%2065%25&monitor=MSI%20NXG253R&headset=Unknown&mousepad=Lethal%20Gaming%20Gear%20Saturn%20Pro&gpu=Unknown&cpu=Unknown&keyCrouch=C&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=R&keyWeaponSlot1=1&keyWeaponSlot2=2&keyWeaponSlot3=3&keyWeaponSlot4=Z&keyWeaponSlot5=X&keyUse=Scroll%20Wheel%20Up&keyWall=Q&keyFloor=V&keyStairs=Mouse%20Button%204&keyRoof=Mouse%20Button%205&keyTrap=F&keyRotateBuilding=T&keyReloadRotate=T&keyMap=Unknown&keyInventory=Unknown&keyEdit=E&keyTurboBuilding=On&keyConfirmEditRelease=On&disablePreEditOption=Off&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Worthy.jpg">
+        <img src="Worthy.jpg" />
+      </a>
+      <ul>
+        <li>Worthy</li>
+       </ul>
+    </div>
+    <!--Alex -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Alex&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=100%25&uiContrast=Unknown&colorBlindMode=Unknown&colorBlindStrength=Unknown&viewDistance=Near&shadows=Off&antiAliasing=Unknown&textures=Low&effects=Unknown&postProcessing=Unknown&vsync=Off&motionBlur=Off&renderingMode=Performance&hudScale=60%25&dpi=800&pollingRate=1000Hz&xSensitivity=7.0&ySensitivity=7.0&targetingSensitivity=33.0&scopeSensitivity=33.0&buildingSensitivity=100.0&editingSensitivity=100.0&mouseAcceleration=Unknown&mouse=Razer%20Viper%20V3%20Pro%20Black&keyboard=Razer%20Huntsman%20V3%20Pro%20Mini%20Black&monitor=ASUS%20ROG%20SWIFT%20PG258Q&headset=Unknown&mousepad=Lethal%20Gaming%20Gear%20Saturn%20Pro%20Red&gpu=Unknown&cpu=Unknown&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=5&keyWeaponSlot5=6&keyUse=E%20/%20Scroll%20Wheel%20Up&keyWall=Z&keyFloor=X&keyStairs=C%20/%20Mouse%20Button%204&keyRoof=V&keyTrap=Mouse%20Button%205&keyRotateBuilding=Unknown&keyBuildingEdit=G&keyTurboBuilding=On&keyConfirmEditRelease=Off&disablePreEditOption=On&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Alex.jpg">
+        <img src="Alex.jpg" />
+      </a>
+      <ul>
+        <li>Alex</li>
+       </ul>
+    </div>
+    <!--Juu -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Juu&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=150%25&uiContrast=Unknown&colorBlindMode=Off&colorBlindStrength=Unknown&viewDistance=Medium&shadows=Off&antiAliasing=Unknown&textures=Low&effects=Unknown&postProcessing=Unknown&vsync=Off&motionBlur=Off&renderingMode=Performance&hudScale=64%25&dpi=800&pollingRate=2000Hz&xSensitivity=8.0&ySensitivity=8.0&targetingSensitivity=28.0&scopeSensitivity=100.0&buildingSensitivity=100.0&editingSensitivity=100.0&mouseAcceleration=Unknown&mouse=Logitech%20G%20Pro%20X%20Superlight%20Black&keyboard=Wooting%2080HE%20Black&monitor=ZOWIE%20XL2546K&headset=Logitech%20G%20Pro%20Headset&mousepad=Custom%20Mousepad&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=Mouse%20Wheel%20Press&keyWeaponSlot3=3&keyWeaponSlot4=4&keyWeaponSlot5=5&keyUse=E&keyWall=Q&keyFloor=C&keyStairs=F&keyRoof=V&keyTrap=T&keyRotateBuilding=R&keyBuildingEdit=G&keyTurboBuilding=On&keyConfirmEditRelease=On&disablePreEditOption=Off&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Juu.jpg">
+        <img src="Juu.jpg" />
+      </a>
+      <ul>
+        <li>Juu</li>
+       </ul>
+    </div>
+    <!--Mikson -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Mikson&region=Unknown&team=Unknown&resolution=1720x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=140%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=Unknown&viewDistance=Epic&shadows=Off&antiAliasing=Unknown&textures=Low&effects=Unknown&postProcessing=Unknown&vsync=Off&motionBlur=Off&renderingMode=Performance&hudScale=95%25&dpi=800&pollingRate=2000Hz&xSensitivity=8.5&ySensitivity=8.5&targetingSensitivity=30.0&scopeSensitivity=39.0&buildingSensitivity=100.0&editingSensitivity=100.0&mouseAcceleration=Unknown&mouse=Razer%20Viper%20V3%20Pro%20Black&keyboard=SteelSeries%20Apex%20Pro%20Mini%20Gen%203&monitor=Alienware%20AW2521HF&headset=beyerdynamic%20MMX%20300&mousepad=Inked%20Gaming%20Custom%20Mousepad&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=Caps%20Lock&keyHarvestingTool=Tab&keyWeaponSlot1=Q&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=Z&keyWeaponSlot5=T&keyUse=E&keyWall=Mouse%20Button%205&keyFloor=V&keyStairs=Mouse%20Button%204&keyRoof=L-Shift&keyTrap=C&keyRotateBuilding=R&keyBuildingEdit=F&keyTurboBuilding=Off&keyConfirmEditRelease=Off&disablePreEditOption=Off&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Mikson.jpg">
+        <img src="Mikson.jpg" />
+      </a>
+      <ul>
+        <li>Mikson</li>
+       </ul>
+    </div>
+    <!--Kwanti -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Kwanti&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240fps&brightness=120%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=Unknown&viewDistance=Far&shadows=Off&antiAliasing=Unknown&textures=Low&effects=Unknown&postProcessing=Unknown&vsync=Off&motionBlur=Unknown&renderingMode=Performance&hudScale=60%25&dpi=800&pollingRate=1000Hz&xSensitivity=6.6&ySensitivity=6.6&targetingSensitivity=40.0&scopeSensitivity=40.0&buildingSensitivity=100.0&editingSensitivity=100.0&mouseAcceleration=Unknown&mouse=Razer%20Deathadder%20V3%20Pro%20Black&keyboard=Razer%20Huntsman%20V3%20Pro%20TKL%20Black&monitor=ZOWIE%20XL2546K&headset=Razer%20BlackShark%20V2%20Pro%20White&mousepad=Razer%20Gigantus%20V2&keyCrouch=L-Shift&keyJump=Space%20Bar&keySprint=L-Ctrl&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=5&keyWeaponSlot5=X&keyUse=E%20/%20Mouse%20Wheel%20Up&keyWall=Mouse%20Button%205&keyFloor=Q&keyStairs=Mouse%20Button%204&keyRoof=C&keyTrap=V&keyRotateBuilding=R&keyBuildingEdit=F&keyTurboBuilding=On&keyConfirmEditRelease=On&disablePreEditOption=Off&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Kwanti.jpg">
+        <img src="Kwanti.jpg" />
+      </a>
+      <ul>
+        <li>Kwanti</li>
+       </ul>
+    </div>
+
+     <!--Layn -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Layn&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=360fps&brightness=100%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=Unknown&viewDistance=Near&shadows=Off&antiAliasing=Unknown&textures=Low&effects=Unknown&postProcessing=Unknown&vsync=Off&motionBlur=Off&renderingMode=Performance&hudScale=75%25&dpi=1600&pollingRate=8000Hz&xSensitivity=2.9&ySensitivity=2.9&targetingSensitivity=50.0&scopeSensitivity=35.0&buildingSensitivity=100.0&editingSensitivity=100.0&mouseAcceleration=Unknown&mouse=Razer%20Viper%20V3%20Pro%20Black&keyboard=Razer%20Huntsman%20V3%20Pro%20TKL%20Black&monitor=ZOWIE%20XL2566K&headset=Razer%20BlackShark%20V2%20Pro%20Black&mousepad=Artisan%20FX%20Hien%20Soft%20Black&keyCrouch=L-Shift&keyJump=Space%20Bar&keySprint=%3E&keyHarvestingTool=Scroll%20Wheel%20Up&keyWeaponSlot1=%26&keyWeaponSlot3=%22&keyWeaponSlot4=V&keyWeaponSlot5=%28&keyUse=E&keyWall=Mouse%20Button%205&keyFloor=X&keyStairs=Mouse%20Button%204&keyRoof=A&keyTrap=Caps%20Lock&keyRotateBuilding=R&keyBuildingEdit=F%20/%20Scroll%20Wheel%20Down&keyTurboBuilding=On&keyConfirmEditRelease=On&disablePreEditOption=Off&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Layn.jpg">
+        <img src="Layn.jpg" />
+      </a>
+      <ul>
+        <li>Layn</li>
+       </ul>
+    </div>
+    <!--Arc -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Arc&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=360fps&brightness=100%25&uiContrast=1x&colorBlindMode=Tritanope&colorBlindStrength=5&viewDistance=Epic&shadows=Unknown&antiAliasing=Unknown&textures=Low&effects=Unknown&postProcessing=Unknown&vsync=Off&motionBlur=Off&renderingMode=Performance&hudScale=85%25&dpi=1600&pollingRate=2000Hz&xSensitivity=3.1&ySensitivity=3.1&targetingSensitivity=35.0&scopeSensitivity=35.0&buildingSensitivity=100.0&editingSensitivity=100.0&mouseAcceleration=Unknown&mouse=Razer%20Viper%20V3%20Pro%20White&keyboard=Wooting%2060HE%2B&monitor=ASUS%20ROG%20SWIFT%20PG259QN&headset=Razer%20BlackShark%20V2%20Pro%20White&mousepad=Razer%20Gigantus%20V2&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=Q&keyHarvestingTool=T&keyWeaponSlot1=B&keyWeaponSlot2=E&keyWeaponSlot3=R&keyWeaponSlot4=3&keyWeaponSlot5=4&keyUse=Mouse%20Wheel%20Up&keyWall=Mouse%20Button%205&keyFloor=V&keyStairs=Mouse%20Button%204&keyRoof=L-Shift&keyTrap=C&keyRotateBuilding=G&keyBuildingEdit=F&keyTurboBuilding=On&keyConfirmEditRelease=Off&disablePreEditOption=Off&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Arc.jpg">
+        <img src="Arc.jpg" />
+      </a>
+      <ul>
+        <li>Arc</li>
+       </ul>
+    </div>
+    <!--Kirwa -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Kirwa&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=Unknown&brightness=Unknown&uiContrast=Unknown&colorBlindMode=Unknown&colorBlindStrength=Unknown&viewDistance=Unknown&shadows=Unknown&antiAliasing=Unknown&textures=Unknown&effects=Unknown&postProcessing=Unknown&vsync=On&motionBlur=Unknown&renderingMode=Unknown&hudScale=100%25&dpi=800&pollingRate=Unknown&xSensitivity=10.0&ySensitivity=10.0&targetingSensitivity=37.0&scopeSensitivity=28.0&buildingSensitivity=100.0&editingSensitivity=100.0&mouseAcceleration=Unknown&mouse=Razer%20Viper%20V3%20Pro%20Black&keyboard=Razer%20Huntsman%20V3%20Pro&monitor=Alienware%20AW2523HF&headset=Razer%20BlackShark%20V2%20Pro%20Black&mousepad=Razer%20Gigantus%20V2&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=A&keyWeaponSlot1=1&keyWeaponSlot2=2&keyWeaponSlot3=3&keyWeaponSlot4=4&keyWeaponSlot5=5&keyUse=Mouse%20Wheel%20Down&keyWall=Mouse%20Button%205&keyFloor=E&keyStairs=Mouse%20Button%204&keyRoof=R&keyTrap=C&keyRotateBuilding=G&keyBuildingEdit=Scroll%20Wheel%20Down&keyTurboBuilding=On&keyConfirmEditRelease=On&disablePreEditOption=Off&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Kirwa.jpg">
+        <img src="Kirwa.jpg" />
+      </a>
+      <ul>
+        <li>Kirwa</li>
+       </ul>
+    </div>
+    <!--CouRage -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=CouRage&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=Unlimited&brightness=Unknown&uiContrast=Unknown&colorBlindMode=Unknown&colorBlindStrength=Unknown&viewDistance=Epic&shadows=Off&antiAliasing=Unknown&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=100%25&dpi=800&pollingRate=1000&xSensitivity=9.0&ySensitivity=9.0&targetingSensitivity=37.0&scopeSensitivity=37.0&buildingSensitivity=Unknown&editingSensitivity=Unknown&mouseAcceleration=Unknown&mouse=Razer%20DeathAdder%20V2&keyboard=Corsair%20K65%20RGB%20MINI%2060%25&monitor=Samsung%20CRG5&headset=Corsair%20Virtuoso%20Pro&mousepad=Corsair%20MM700%20RGB&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=Z&keyWeaponSlot5=X&keyUse=E&keyWall=Mouse%20Button%204&keyFloor=F&keyStairs=Mouse%20Button%205&keyRoof=G&keyTrap=Mouse%20Wheel%20Button&keyRotateBuilding=Unknown&keyBuildingEdit=Q&keyTurboBuilding=Unknown&keyConfirmEditRelease=Unknown&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=On&nvidiaReflex=Unknown&image=CouRage.jpg">
+        <img src="CouRage.jpg" />
+      </a>
+      <ul>
+        <li>CouRage</li>
+       </ul>
+    </div>
+    <!--Psalm -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Psalm&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=Unlimited&brightness=Unknown&uiContrast=Unknown&colorBlindMode=Unknown&colorBlindStrength=Unknown&viewDistance=Medium&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=100%25&dpi=800&pollingRate=1000&xSensitivity=6.0&ySensitivity=6.0&targetingSensitivity=70.0&scopeSensitivity=70.0&buildingSensitivity=Unknown&editingSensitivity=Unknown&mouseAcceleration=Unknown&mouse=Logitech%20G%20Pro%20X%20Superlight%20Black&keyboard=Custom%20Keyboard&monitor=ZOWIE%20XL2546K&headset=Bose%20Soundsport&mousepad=Artisan%20FX%20Hien%20Soft%20Black&keyCrouch=L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=5&keyWeaponSlot5=6&keyUse=F&keyWall=E&keyFloor=Mouse%205&keyStairs=Q&keyRoof=R&keyTrap=Mouse%204&keyRotateBuilding=G&keyBuildingEdit=V&keyTurboBuilding=On&keyConfirmEditRelease=Unknown&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=Off&nvidiaReflex=Unknown&image=Psalm.jpg">
+        <img src="Psalm.jpg" />
+      </a>
+      <ul>
+        <li>Psalm</li>
+       </ul>
+    </div>
+    <!--Emad -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Emad&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240%20FPS&brightness=50%25&uiContrast=1x&colorBlindMode=Protanope&colorBlindStrength=10&viewDistance=Epic&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=100%25&dpi=800&pollingRate=1000&xSensitivity=6.5&ySensitivity=6.5&targetingSensitivity=50.0&scopeSensitivity=50.0&buildingSensitivity=Unknown&editingSensitivity=Unknown&mouseAcceleration=Unknown&mouse=Logitech%20G%20Pro%20Wireless&keyboard=Logitech%20G%20Pro%20X%20Keyboard&monitor=Alienware%20AW2518H&headset=Logitech%20G%20Pro%20X%20Headset&mousepad=Logitech%20G640%20TSM%20Edition&keyCrouch=C&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=Unknown&keyWeaponSlot1=Unknown&keyWeaponSlot2=Unknown&keyWeaponSlot3=Unknown&keyWeaponSlot4=Unknown&keyWeaponSlot5=Unknown&keyUse=V&keyWall=Q&keyFloor=Mouse%20Button%204&keyStairs=E&keyRoof=Mouse%20Button%205&keyTrap=L-Shift&keyRotateBuilding=R&keyBuildingEdit=F&keyTurboBuilding=Unknown&keyConfirmEditRelease=On&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=On&nvidiaReflex=Unknown&image=Emad.jpg">
+        <img src="Emad.jpg" />
+      </a>
+      <ul>
+        <li>Emad</li>
+       </ul>
+    </div>
+    <!--Jelty -->
+    <div class="hi">
+      <a
+        href="fourth.html?player=Jelty&region=Unknown&team=Unknown&resolution=1920x1080&displayMode=Fullscreen&frameRateLimit=240%20FPS&brightness=100%25&uiContrast=1x&colorBlindMode=Off&colorBlindStrength=0&viewDistance=Near&shadows=Off&antiAliasing=Off&textures=Low&effects=Low&postProcessing=Low&vsync=Unknown&motionBlur=Unknown&renderingMode=Unknown&hudScale=80%25&dpi=800&pollingRate=1000&xSensitivity=8.0&ySensitivity=8.0&targetingSensitivity=50.0&scopeSensitivity=50.0&buildingSensitivity=Unknown&editingSensitivity=Unknown&mouse=Logitech%20G%20Pro%20X%20Superlight%20Black&keyboard=SteelSeries%20Apex%20Pro%20TKL&monitor=GIGABYTE%20AORUS%20KD25F&headset=Logitech%20G%20Pro%20X%20Headset&mousepad=The%20Mousepad%20Company%20Strata%20Liquid%2007&keyCrouch=L-Shift%20/%20L-Ctrl&keyJump=Space%20Bar&keySprint=L-Shift&keyHarvestingTool=1&keyWeaponSlot1=2&keyWeaponSlot2=3&keyWeaponSlot3=4&keyWeaponSlot4=Z&keyWeaponSlot5=X&keyUse=R%20/%20Mouse%20Wheel%20Up&keyWall=Mouse%20Button%205&keyFloor=E&keyStairs=Mouse%20Button%204&keyRoof=Q&keyTrap=5&keyRotateBuilding=V&keyBuildingEdit=F%20/%20Mouse%20Wheel%20Down&keyTurboBuilding=Unknown&keyConfirmEditRelease=Off&disablePreEditOption=Unknown&resolution3D=Unknown&showFPS=Unknown&nvidiaReflex=Unknown&image=Jelty.jpg">
+        <img src="Jelty.jpg" />
+      </a>
+      <ul>
+        <li>Jelty</li>
+       </ul>
+    </div>
+
+    </main>
+
+     <!-- Buttons-->
+
+<div class="pagination">
+
+  <!-- زر السابق -->
+  <div class="button">
+    <a href="third2.html">&#8592;</a>
+  </div>
+
+
+
+  <!-- أرقام الصفحات -->
+  <div class="button">
+    <a href="page1.html" class="active">3</a>
+  </div>
+
+  
+
+  <div><p class="dot">...</p></div>
+
+
+  <div class="button">
+    <a href="third4.html">4</a>
+  </div>
+
+  <!-- زر التالي -->
+  <div class="button">
+    <a href="third4.html">&#8594;</a>
+  </div>
+
+</div>
+
+
+<section class="disclosure" id="disclosure">
+      <h2>Disclosure & Policies</h2>
+      <p>You can see all the terms and conditions down there.</p>
+      <p>all information are mostly correct , we are human and there might be some mistakes , if you found any , please .</p>
+      <p>Contact us here: <a href="mailto:pro.settings.help@gmail.com">pro.settings.help@gmail.com</a> we will answer as fast as possible</p>
+
+
+</p>
+    </section>
+
+
+
+  <footer>
+    <p>&copy; 2025 Fortnite Pro Zone. All rights reserved.</p>
+    <a href="#players">Top Players</a>
+    <a href="#gear">Best Gear</a>
+    <a href="#disclosure">Disclosure</a>
+  </footer>
+
+
+   </body>
+
+   
+  </html>
