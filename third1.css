@@ -6,6 +6,11 @@ body {
   color: #e0e0e0;
 }
 
+li {
+  list-style: none;
+  padding-right:35px;
+}
+
 /* Header */
 header {
   padding: 2rem;
@@ -23,9 +28,9 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  align-items: center;
   padding: 30px 20px;
 }
-
 /* Player card */
 .hi {
   background-color: rgba(20, 24, 38, 0.9);
@@ -38,8 +43,9 @@ main {
   color: inherit;
   box-shadow: 0 0 15px rgba(0, 191, 255, 0.08);
   border: 1px solid #e3e9eb33;
-  position: relative;
+  position: relative; 
 }
+
 
 .hi:hover {
   background-color: rgba(30, 40, 60, 0.95);
@@ -222,6 +228,132 @@ footer a:hover {
   border-color: #00bfff;
   box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
   background-color: rgba(30, 35, 50, 0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Large Screens (1600px and up) */
+@media (min-width: 1600px) {
+  main,
+  #searchResults {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 60px; /* more side space */
+    gap: 30px;
+  }
+
+  .hi {
+    width: 350px;
+    height: 400px;
+  }
+
+  #searchInput {
+    width: 300px;
+  }
+}
+
+/* Medium to Large Laptops (1200px–1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  main,
+  #searchResults {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    gap: 25px;
+  }
+
+  .hi {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+/* Tablets & Small Laptops (768px–1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  main,
+  #searchResults {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    gap: 20px;
+  }
+
+  .hi {
+    width: 250px;
+    height: 330px;
+  }
+
+  #searchInput {
+    width: 80%;
+  }
+}
+
+/* Phones (481px–767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  main,
+  #searchResults {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 50px;
+  }
+
+  .hi {
+    width: 90%;
+    height: auto;
+  }
+
+  #searchInput {
+    width: 90%;
+    height: 45px;
+  }
+}
+
+/* Extra Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  main,
+  #searchResults {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 8px;
+    gap: 16px;
+  }
+
+  .hi {
+    width: 95%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .hi img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hi h3 {
+    font-size: 1.1rem;
+  }
+
+  #searchInput {
+    width: 90%;
+    height: 40px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
 }
 
 
