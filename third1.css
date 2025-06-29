@@ -44,6 +44,8 @@ main {
   box-shadow: 0 0 15px rgba(0, 191, 255, 0.08);
   border: 1px solid #e3e9eb33;
   position: relative; 
+  font-size: 19px;
+  color: #ffffff;
 }
 
 
