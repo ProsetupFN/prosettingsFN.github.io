@@ -110,6 +110,8 @@ background-image: url(DoughFruit.webp);
   object-fit: cover;
     object-fit: cover; /* covers entire div, cropping if needed */
   display: block;
+  
+ background-color: #ffffff;
 }
 
 
