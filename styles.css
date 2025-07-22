@@ -304,9 +304,9 @@ body.dark-mode .theme-toggle::before {
 / الشاشات الصغيرة جدًا (موبايلات أقل من 600px) */
 @media (max-width: 600px) {
   .theme-toggle {
-    top: 20px;
+    top: 30px;
     right: 20px;
-
+margin-left:10px;
   }
 
   .theme-toggle::before {
