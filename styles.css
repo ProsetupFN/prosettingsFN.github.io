@@ -261,27 +261,31 @@ body.dark-mode .theme-toggle::before {
 
 
 
-/* 4K Screens */
+/* الشاشات الكبيرة جداً (4K وما فوق) */
+@media (min-width: 1920px) {
+  .container {
+    width: 60%;
+  }
+}
+
+/* الشاشات المتوسطة (تابلت، لابتوب صغير) */
 @media (max-width: 991px) {
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
     padding: 10px 20px;
   }
 
   .nav-links {
-    position: static;
     flex-direction: row;
-    align-items: flex-start;
     gap: 10px;
-    margin: 10px 0 0 0;
+    margin-top: 50px;
   }
 
   .logo {
-    position: static;
     margin-bottom: 10px;
-    top:50px;
+    position: absolute;
+    top: 20px;
   }
 
   .profile-box {
@@ -294,31 +298,29 @@ body.dark-mode .theme-toggle::before {
     width: 160px;
     height: 160px;
   }
-   .theme-toggle {
+
+  .theme-toggle {
     top: 20px;
     right: 20px;
-
   }
- 
 }
 
-/ الشاشات الصغيرة جدًا (موبايلات أقل من 600px) */
+/* الشاشات الصغيرة جداً (موبايل أقل من 600px) */
 @media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
   .theme-toggle {
-    top: 30px;
-    right: 20px;
-margin-left:10px;
+    top: 15px;
+    right: 15px;
   }
 
   .theme-toggle::before {
     width: 28px;
     height: 28px;
-  }
-
-  .container {
-    padding: 10px;
-    margin: 20px auto;
-    width: 100%;
   }
 
   .profile-info h1 {
@@ -336,23 +338,3 @@ margin-left:10px;
     font-size: 0.9rem;
   }
 }
-@media(max-width:1817px){
-  .container{
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
