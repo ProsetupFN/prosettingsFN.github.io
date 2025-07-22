@@ -281,7 +281,7 @@ body.dark-mode .theme-toggle::before {
   .logo {
     position: static;
     margin-bottom: 10px;
-    top:20px;
+    top:50px;
   }
 
   .profile-box {
