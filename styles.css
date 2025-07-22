@@ -314,8 +314,8 @@ body.dark-mode .theme-toggle::before {
   }
 
   .theme-toggle {
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
   }
 
   .theme-toggle::before {
